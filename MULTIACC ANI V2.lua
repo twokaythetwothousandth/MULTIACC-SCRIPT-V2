@@ -422,13 +422,13 @@ local function zAnims() --punch animation
 	animsCheck.ifZPress = false
 end
 
-local function xAnims() --bitchslap animation
+local function xAnims() --slap anim
 	animsCheck.ifXPress = true
-	createAnim("bitchslap", animIds[19], 0.1, 0.5, 0.8, 2, 0, false)
-	createAnim("bitchslaplegs", animIds[12], 0.1, 0.5, 0.6, 0, 0.3, true)    
+	createAnim("slap", animIds[19], 0.1, 0.5, 0.8, 2, 0, false)
+	createAnim("slaplegs", animIds[12], 0.1, 0.5, 0.6, 0, 0.3, true)    
 	wait(0.2)
-	stopAnim("bitchslap", true)
-	stopAnim("bitchslaplegs", true)
+	stopAnim("slap", true)
+	stopAnim("slaplegs", true)
 	wait(0.4)
 	animsCheck.ifXPress = false
 end
@@ -708,4 +708,4 @@ lp.Chatted:Connect(function(msg) --cmds! yay!
 	end
 end)
 
-warn("XYZ Multiacc Animations Script V2 has been executed. Use with caution, skid.") --the "skid" is for if you mfs leak this.
+warn("XYZ Multiacc Animations Script V2 has been executed. Use with caution, skid.") --the "skid" is for if script kiddies leak this.
