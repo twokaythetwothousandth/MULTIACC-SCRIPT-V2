@@ -607,7 +607,7 @@ local function initialize(mainPlr)
 			end
 		end
 	end)
-	mainAni = controllerHum.AnimationPlayed:Connect(function(animationTrack) -- deprecated but required, i pray that roblox does not remove this oh god oh fuck
+	mainAni = controllerHum.AnimationPlayed:Connect(function(animationTrack) -- deprecated but required, i pray that roblox does not remove this
 		if animsCheck.enablePart and animsCheck.ifEnabled then
 			animationResponse(animationTrack)
 		end
@@ -640,7 +640,7 @@ local function initialize(mainPlr)
 		mainCharAdded = controllerHum.Died:Connect(function(addedChar) 
 			died()
 		end)	
-		mainAni = controllerHum.AnimationPlayed:Connect(function(animationTrack) -- deprecated but required, i pray that roblox does not remove this oh god oh fuck
+		mainAni = controllerHum.AnimationPlayed:Connect(function(animationTrack) -- deprecated but required, i pray that roblox does not remove this
 			if animsCheck.enablePart and animsCheck.ifEnabled then
 				animationResponse(animationTrack)
 			end
@@ -654,4 +654,4 @@ end
 
 initialize()
 warn("XYZ Multiacc ALT Animations Script V2 has been executed. Use with caution, skid.")
-warn("ALT VERSION IS ONLINE BITCH!")
+warn("ALT VERSION IS ONLINE!")
